@@ -195,6 +195,7 @@ const controlLike = () => {
             state.recipe.author,
             state.recipe.img
         );
+
         // toggle the like button
         likesView.toggleLikeBtn(true);
         
@@ -203,6 +204,7 @@ const controlLike = () => {
     }
     // user has not yet liked current recipe
     else {
+        
         // remove like to the state
         state.likes.deleteLike(currentId);
 
